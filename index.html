@@ -87,7 +87,7 @@ section.block{padding-block:72px}
 /* firm */
 .firm{background:var(--surface);border-block:1px solid var(--line)}
 .firm .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-.firm blockquote{margin:0;font-family:var(--f-display);font-size:clamp(22px,2.6vw,30px);line-height:1.35;font-style:italic}
+.firm .x-old{margin:0;font-family:var(--f-display);font-size:clamp(22px,2.6vw,30px);line-height:1.35;font-style:italic}
 .firm blockquote::before{content:"";display:block;width:48px;height:2px;background:var(--brass);margin-bottom:20px}
 .firm .copy{display:grid;gap:16px;color:var(--muted)}
 .attys{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
@@ -230,15 +230,15 @@ img{max-width:100%}
     <div class="wrap">
       <div>
         <p class="eyebrow">Parsons · Lexington, Tennessee</p>
-        <h1>Steady counsel for Decatur &amp; Henderson County families <em>since 1982.</em></h1>
-        <p class="lede">A husband-and-wife practice with offices in Parsons and Lexington. We handle the legal matters that shape a household, a business and a community, and we answer the phone ourselves.</p>
+        <h1>Attorneys at Law <em>since 1982.</em></h1>
+        <p class="lede">Wood Law Offices is a general practice law firm with offices in Parsons and Lexington, Tennessee, representing individuals, families, businesses and local government.</p>
         <div class="actions">
           <a class="btn btn-brass" href="#book">Book a consultation</a>
           <a class="btn btn-ghost" href="#offices">Find an office</a>
         </div>
         <div class="since">
-          <div><b>44</b><span>Years in practice</span></div>
-          <div><b>2</b><span>County-seat offices</span></div>
+          <div><b>1982</b><span>Established</span></div>
+          <div><b>2</b><span>Office locations</span></div>
           <div><b>Mon–Fri</b><span>9:00 am – 5:00 pm</span></div>
         </div>
       </div>
@@ -260,12 +260,12 @@ img{max-width:100%}
   <section class="block" id="practice">
     <div class="wrap">
       <div class="block-head">
-        <div><p class="eyebrow">Practice Areas</p><h2>A general practice built for small-town Tennessee</h2></div>
-        <p>Most clients come to us with one question and stay for decades. These are the matters we see most across both counties.</p>
+        <div><p class="eyebrow">Practice Areas</p><h2>Areas of practice</h2></div>
+        <p>The firm provides legal services in the following areas.</p>
       </div>
       <div class="practice">
         <article><span class="tag">Estates</span><h3>Wills, Trusts &amp; Probate</h3><p>Wills, powers of attorney, health-care directives, and guiding families through Chancery Court probate.</p></article>
-        <article><span class="tag">Property</span><h3>Real Estate</h3><p>Closings, deeds, title questions, farmland and lake-property transfers, boundary disputes.</p></article>
+        <article><span class="tag">Property</span><h3>Real Estate</h3><p>Real estate closings, deeds, title matters and property disputes.</p></article>
         <article><span class="tag">Family</span><h3>Family Law</h3><p>Divorce, custody and parenting plans, child support, adoptions and juvenile court matters.</p></article>
         <article><span class="tag">Courts</span><h3>Criminal Defense</h3><p>General Sessions and Circuit Court representation, DUI, traffic and probation matters.</p></article>
         <article><span class="tag">Benefits</span><h3>Social Security Disability</h3><p>Applications, reconsiderations and hearings for SSDI and SSI claims.</p></article>
@@ -276,11 +276,10 @@ img{max-width:100%}
 
   <section class="block firm" id="firm">
     <div class="wrap">
-      <blockquote>Two offices, one family, and the same promise for over four decades: plain answers, honest fees, and a lawyer who knows your county.</blockquote>
+      <div><p class="eyebrow">About the Firm</p><h2 style="font-size:clamp(28px,3.4vw,40px);margin-top:8px">Serving West Tennessee since 1982</h2></div>
       <div class="copy">
-        <p class="eyebrow">The Firm</p>
-        <p>Wood Law Offices opened in Parsons in 1982 and later added a Lexington office on Monroe Avenue, a short walk from the Henderson County Courthouse. The practice is run by a husband-and-wife team who split their time between both locations.</p>
-        <p>Because we are a family firm, you will deal with your attorney directly, not a call center. Consultations can be held at either office.</p>
+                <p>Wood Law Offices was established in Parsons in 1982 and later opened a second office in Lexington. The firm is owned and operated by husband-and-wife attorneys.</p>
+        <p>For more than four decades, the firm has represented clients in Decatur County, Henderson County and the surrounding area. Clients work directly with their attorney, and consultations are available at either office.</p>
         <div class="attys">
           <div class="atty"><div class="mono">RW</div><b>Ricky L. Wood, Jr.</b><span>Attorney · Parsons City Attorney</span></div>
           <div class="atty"><div class="mono">W</div><b>[Partner name]</b><span>Attorney · bio to be supplied by the firm</span></div>
@@ -292,8 +291,8 @@ img{max-width:100%}
   <section class="block" id="offices">
     <div class="wrap">
       <div class="block-head">
-        <div><p class="eyebrow">Locations</p><h2>Two county seats, twenty-five minutes apart</h2></div>
-        <p>Walk-ins are welcome, but booking ahead guarantees an attorney is in that office when you arrive.</p>
+        <div><p class="eyebrow">Locations</p><h2>Office locations</h2></div>
+        <p>Both offices are open Monday through Friday, 9:00 am to 5:00 pm. Consultations are by appointment.</p>
       </div>
       <div class="offices">
         <div class="office">
@@ -323,7 +322,7 @@ img{max-width:100%}
     <div class="wrap">
       <div class="block-head">
         <div><p class="eyebrow">Online Booking</p><h2>Request a consultation</h2></div>
-        <p>Pick an office and an open time. Our office confirms every request by phone or email, usually within one business day.</p>
+        <p>Select an office, date and time. The office will contact you to confirm your appointment.</p>
       </div>
       <div class="desk">
         <form class="panel" id="bookForm" novalidate>
@@ -420,7 +419,7 @@ img{max-width:100%}
 <footer>
   <div class="wrap">
     <div class="fcols">
-      <div><p style="font-family:var(--f-display);font-size:22px;opacity:1">Wood Law Offices</p><p>Attorneys at law serving Decatur, Henderson and the surrounding West Tennessee counties since 1982.</p></div>
+      <div><p style="font-family:var(--f-display);font-size:22px;opacity:1">Wood Law Offices</p><p>Attorneys at law. Parsons and Lexington, Tennessee. Established 1982.</p></div>
       <div><p class="eyebrow">Parsons</p><ul><li>36 Tennessee Ave S</li><li>(731) 847-6713</li></ul></div>
       <div><p class="eyebrow">Lexington</p><ul><li>24 Monroe Ave, Suite A</li><li>(731) 968-9908</li></ul></div>
     </div>
