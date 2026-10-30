@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Request a consultation with Wood Law Offices in Parsons or Lexington, Tennessee.">
+<title>Request a Consultation · Wood Law Offices</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="demo-bar"><div class="wrap">Demo site prepared for Wood Law Offices by <a href="https://www.litamerica.net" target="_blank" rel="noopener">LIT America</a>. Consultation requests in this demo are saved only in your browser.</div></div>
+
+<header class="mast">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Wood Law Offices home">
+      <span class="mark">W</span>
+      <span><b>Wood Law Offices</b><small>Attorneys at Law · Est. 1982</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="index.html#practice">Practice Areas</a>
+      <a href="attorneys.html">Attorneys</a>
+      <a href="index.html#offices">Offices</a>
+      <a href="consultation.html#staff">Staff Login</a>
+      <a href="consultation.html" class="cta" aria-current="page">Request a Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Consultations</p>
+      <h1>Request a consultation</h1>
+      <p class="lede">Choose an office, the type of matter and a preferred time. The office reviews every request and contacts you to confirm before the appointment is final.</p>
+    </div>
+  </section>
+
+  <section class="block tight" id="process">
+    <div class="wrap">
+      <div class="block-head">
+        <div><p class="eyebrow">The Process</p><h2>What happens after you submit</h2></div>
+      </div>
+      <ol class="process">
+        <li><h3>Submit a request</h3><p>Select an office, your type of matter and a preferred date and time.</p></li>
+        <li><h3>Office review</h3><p>Staff review the request and check attorney availability.</p></li>
+        <li><h3>Confirmation</h3><p>The office contacts you by phone or email to confirm or offer another time. <span class="tbc">expected response time</span></p></li>
+        <li><h3>Your consultation</h3><p>Meet with an attorney at the office you selected, or by phone.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block tight alt">
+    <div class="wrap">
+      <div class="block-head">
+        <div><p class="eyebrow">Before You Request</p><h2>Common questions</h2></div>
+      </div>
+      <div class="faq">
+        <div><h3>Is there a fee for a consultation?</h3><p><span class="tbc">consultation fee policy</span></p></div>
+        <div><h3>When will I hear back?</h3><p><span class="tbc">response time for online requests</span></p></div>
+        <div><h3>Is my appointment confirmed when I submit?</h3><p>No. A request holds your preferred time until the office contacts you to confirm it.</p></div>
+        <div><h3>What should I bring?</h3><p>Bring photo identification and any documents related to your matter, such as deeds, court papers, letters or prior wills.</p></div>
+        <div><h3>What should I include in the form?</h3><p>A short description is enough. Please do not include confidential details. Submitting a request does not create an attorney–client relationship.</p></div>
+        <div><h3>My matter is urgent.</h3><p>Call the Parsons office at <span class="copyable">(731) 847-6713</span> or the Lexington office at <span class="copyable">(731) 968-9908</span>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block book" id="book">
+    <div class="wrap">
+      <div class="block-head">
+        <div><p class="eyebrow">Online Request</p><h2>Choose an office and time</h2></div>
+        <p>Available times for the next three weeks. The offices are closed on weekends.</p>
+      </div>
+      <div class="desk">
+        <form class="panel" id="bookForm" novalidate>
+          <div class="step">
+            <h3><i>1</i>Office</h3>
+            <div class="seg" id="officeSeg">
+              <label><input type="radio" name="office" id="off-par" value="Parsons" checked><span>Parsons</span></label>
+              <label><input type="radio" name="office" id="off-lex" value="Lexington"><span>Lexington</span></label>
+            </div>
+          </div>
+          <div class="step">
+            <h3><i>2</i>Type of matter</h3>
+            <div class="field">
+              <label for="matter">Matter</label>
+              <select id="matter">
+                <option>Wills, Trusts &amp; Probate</option><option>Real Estate</option><option>Family Law</option>
+                <option>Criminal Defense</option><option>Social Security Disability</option><option>Business &amp; Municipal</option><option>Other</option>
+              </select>
+            </div>
+            <div class="seg">
+              <label><input type="radio" name="mode" id="mode-in" value="In person" checked><span>In person</span></label>
+              <label><input type="radio" name="mode" id="mode-ph" value="Phone call"><span>Phone call</span></label>
+            </div>
+          </div>
+          <div class="step">
+            <h3><i>3</i>Preferred date and time</h3>
+            <div class="days" id="days" role="group" aria-label="Date"></div>
+            <div class="times" id="times" role="group" aria-label="Time"></div>
+          </div>
+          <div class="step">
+            <h3><i>4</i>Contact details</h3>
+            <div class="grid2">
+              <div class="field"><label for="fname">Full name</label><input id="fname" autocomplete="name" required></div>
+              <div class="field"><label for="fphone">Phone</label><input id="fphone" type="tel" autocomplete="tel" required></div>
+              <div class="field full"><label for="femail">Email <span>(optional)</span></label><input id="femail" type="email" autocomplete="email"></div>
+              <div class="field full"><label for="fnotes">Brief description <span>(optional, no confidential details)</span></label><textarea id="fnotes"></textarea></div>
+            </div>
+          </div>
+          <div class="notice" id="formMsg" hidden></div>
+          <button class="btn btn-brass" id="submitBtn" type="submit" style="width:100%;margin-top:16px">Send consultation request</button>
+        </form>
+
+        <aside class="panel summary" aria-live="polite">
+          <p class="eyebrow">Your request</p>
+          <h3 id="sumTitle">Choose a time</h3>
+          <div class="sumrow"><span>Office</span><span id="sumOffice">Parsons</span></div>
+          <div class="sumrow"><span>Matter</span><span id="sumMatter">—</span></div>
+          <div class="sumrow"><span>Meeting</span><span id="sumMode">In person</span></div>
+          <p class="notice">The office will contact you to confirm. Submitting a request does not create an attorney–client relationship. Demo: requests are saved in this browser only.</p>
+          <div id="myWrap" hidden>
+            <p class="eyebrow" style="margin-top:6px">Your requests</p>
+            <div class="myreq" id="myList"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="block staff" id="staff">
+    <div class="wrap">
+      <div class="block-head">
+        <div><p class="eyebrow">Staff only</p><h2>Appointment docket</h2></div>
+        <p id="staffNote">For the Wood Law Offices team. Confirm, decline or close out each request from either office.</p>
+      </div>
+      <form class="panel gate" id="gate">
+        <p class="eyebrow">Staff sign-in</p>
+        <p style="color:var(--muted);font-size:14px">Enter the office passcode to manage appointments. Demo passcode: <b class="copyable">wood1982</b></p>
+        <div class="row"><input id="pass" type="password" autocomplete="current-password" aria-label="Passcode"><button class="btn btn-brass" type="submit">Sign in</button></div>
+        <p class="notice bad" id="gateMsg" hidden>That passcode isn't right. Check it and try again.</p>
+      </form>
+      <div id="docketWrap" hidden>
+        <div class="filters" style="justify-content:flex-end"><button class="btn btn-sm btn-ghost" id="resetDemo" type="button">Reset demo data</button><button class="btn btn-sm btn-ghost" id="signOut" type="button">Sign out</button></div>
+        <div class="kpis">
+          <div class="kpi"><span>Awaiting review</span><b id="kPending">0</b></div>
+          <div class="kpi"><span>Confirmed upcoming</span><b id="kConfirmed">0</b></div>
+          <div class="kpi"><span>Parsons</span><b id="kPar">0</b></div>
+          <div class="kpi"><span>Lexington</span><b id="kLex">0</b></div>
+        </div>
+        <div class="filters">
+          <select id="fOffice" aria-label="Office filter"><option value="">Both offices</option><option>Parsons</option><option>Lexington</option></select>
+          <select id="fStatus" aria-label="Status filter"><option value="">All statuses</option><option value="pending">Pending</option><option value="confirmed">Confirmed</option><option value="declined">Declined</option><option value="completed">Completed</option></select>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>When</th><th>Office</th><th>Client</th><th>Matter</th><th>Status</th><th>Actions</th></tr></thead>
+            <tbody id="docket"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><p style="font-family:var(--f-display);font-size:22px;opacity:1">Wood Law Offices</p><p>Attorneys at law. Parsons and Lexington, Tennessee. Established 1982.</p></div>
+      <div><p class="eyebrow">Parsons</p><ul><li>36 Tennessee Ave S</li><li>Parsons, TN 38363</li><li>(731) 847-6713</li></ul></div>
+      <div><p class="eyebrow">Lexington</p><ul><li>24 Monroe Ave, Suite A</li><li>Lexington, TN 38351</li><li>(731) 968-9908</li></ul></div>
+      <div><p class="eyebrow">The Firm</p><ul><li><a href="index.html#practice">Practice areas</a></li><li><a href="attorneys.html">Attorneys</a></li><li><a href="consultation.html">Request a consultation</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>Attorney advertising. Information on this site is not legal advice. Contacting the firm does not create an attorney–client relationship.</span>
+      <span>A product of <a href="https://www.litamerica.net" target="_blank" rel="noopener">LIT America</a></span>
+    </div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
