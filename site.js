@@ -2,12 +2,6 @@
 (function(){
   const $ = s => document.querySelector(s);
 
-  // Copy buttons (phone numbers)
-  document.querySelectorAll(".copybtn").forEach(b=>b.addEventListener("click",()=>{
-    const v=b.dataset.copy;
-    try{ navigator.clipboard.writeText(v).then(()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy",1500)},()=>{}); }catch(e){}
-  }));
-
   // Booking + staff docket live on consultation.html only
   if(!$("#bookForm")) return;
 
@@ -79,6 +73,9 @@
 
   // Preselect office from a link like consultation.html?office=Lexington
   try{ const o=new URLSearchParams(location.search).get("office"); if(o==="Lexington"||o==="Parsons"){ state.office=o; document.querySelector(`input[name=office][value=${o}]`).checked=true; } }catch(e){}
+  // Preselect matter from a practice-area link like consultation.html?matter=estates
+  const MATTERS={estates:"Wills, Trusts & Probate","real-estate":"Real Estate",family:"Family Law",criminal:"Criminal Defense",disability:"Social Security Disability",business:"Business & Municipal"};
+  try{ const m=MATTERS[new URLSearchParams(location.search).get("matter")]; if(m) $("#matter").value=m; }catch(e){}
 
   $("#bookForm").addEventListener("submit",e=>{
     e.preventDefault();

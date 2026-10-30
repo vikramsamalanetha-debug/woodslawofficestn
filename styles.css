@@ -82,7 +82,7 @@ nav.main a.cta{background:var(--brass);color:#1b1408;opacity:1}
 .strip .cell{padding-block:20px;padding-inline:0 20px;display:grid;gap:2px;font-size:15px}
 .strip .cell + .cell{border-left:1px solid var(--line);padding-left:24px}
 .strip .cell b{font-weight:600}
-.strip .phone{font-family:var(--f-mono);color:var(--muted);user-select:all}
+.strip .phone{font-family:var(--f-mono);color:var(--muted)}
 
 section.block{padding-block:72px}
 section.block.tight{padding-block:56px}
@@ -102,8 +102,11 @@ section.block.tight{padding-block:56px}
 
 /* practice */
 .practice{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.practice article{padding:24px 24px 26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
-.practice h3{font-size:20px;margin-bottom:6px}
+.practice .pcard{display:grid;grid-template-rows:auto 1fr auto;gap:6px;padding:24px 24px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);text-decoration:none;transition:background .15s}
+.practice .pcard:hover{background:var(--brass-soft)}
+.practice .more{margin-top:10px;font-size:14px;font-weight:600;color:var(--brass)}
+.practice .pcard:hover .more{text-decoration:underline}
+.practice h3{font-size:20px}
 .practice p{color:var(--muted);font-size:15px}
 
 /* attorney preview (home) */
@@ -130,9 +133,6 @@ section.block.tight{padding-block:56px}
 .profile dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:4px}
 .profile dd{margin:0}
 
-/* "office to confirm" marker */
-.tbc{background:var(--warn-soft);color:var(--warn);border-radius:3px;padding:1px 6px;font-size:.92em}
-.tbc::before{content:"Office to confirm: ";font-weight:600}
 
 /* offices */
 .offices{display:grid;grid-template-columns:1fr 1fr;gap:24px}
@@ -144,7 +144,10 @@ section.block.tight{padding-block:56px}
 .office dd{margin:0}
 .office .mapline{padding:0 24px 22px}
 .copyable{font-family:var(--f-mono);user-select:all}
-.copybtn{margin-left:8px;font:500 12px var(--f-body);background:none;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:2px 8px;cursor:pointer}
+a.tel{font-family:var(--f-mono);text-decoration:none;border-bottom:1px solid var(--brass);white-space:nowrap}
+a.tel:hover{color:var(--brass)}
+footer a.tel{font-family:inherit;border-bottom-color:rgba(211,166,86,.5)}
+.pending-note{margin-top:28px;padding-top:14px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted)}
 
 /* consultation call-to-action band */
 .cta-band{background:var(--brass-soft);border-block:1px solid var(--line)}
